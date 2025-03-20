@@ -15,10 +15,10 @@ Key features:
 1. **Clone the repository**:
 
    ```
-   git clone https://github.com/anonymsynthetic/SDGEV.git
+   git clone https://github.com/anonymsynthetic/Synthetic_Data_SIU.git
    ```
    ```
-   cd ./Synthetic-Data-Generator-Evaluative-Visualization-Tool
+   cd ./Synthetic_Data_SIU
     ```
 2. **Create and activate a virtual environment**:
    ```
@@ -45,12 +45,6 @@ Key features:
 - **Real-time feedback**: Once generation starts, the app displays performance metrics such as losses and KL divergences on the left panel.
 - **Visualization**: The tool visualizes the similarity between synthetic and original data in real-time, helping you evaluate data quality and stop the process when desired.
 
-For more details on the project, read the full research paper here:
-https://github.com/Ahmetyasin/Synthetic-Data-Generator-Evaluative-Visualization-Tool/blob/main/docs/Paper.pdf
-
-
-![Tool Demo](https://github.com/Ahmetyasin/Synthetic-Data-Generator-Evaluative-Visualization-Tool/blob/main/img/SDGEV_vid.gif)
-  
 
 
 
