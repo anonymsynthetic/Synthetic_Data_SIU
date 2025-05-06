@@ -10,6 +10,10 @@ Key features:
 - **Real-time metrics** like **losses** and **KL divergences** displayed on the left, allowing you to assess data quality at each iteration.
 - **Dynamic visualizations** that show the proximity of synthetic data to original data, helping users decide when to stop the generation process.
 
+**System Requirements**
+* **Python version**: Python 3.10.17
+* **Tested on**: Mac Pro with M3 chip
+
 ## **How to Run Locally**
 
 1. **Clone the repository**:
