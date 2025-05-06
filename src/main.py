@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from visualization import visualize_distributions
 from data_generation import iterative_synthetic_data_generation, generate_synthetic_data
-from utils import StreamlitConsole, extract_last_epoch_losses, calculate_kl_divergence
+from utils import StreamlitConsole, extract_last_epoch_losses, calculate_kl_divergence, format_epoch_loss
 from ydata_synthetic.synthesizers import ModelParameters, TrainParameters
 import matplotlib.pyplot as plt
 
@@ -46,7 +46,7 @@ if uploaded_file is not None:
                 last_epoch_loss = extract_last_epoch_losses(console.get_console_output())
                 
                 # Update the sidebar content with the new iteration's output
-                iteration_output = f"Iteration {i}:\nKL Divergence = {kl_div}\nLast epoch losses = {last_epoch_loss if last_epoch_loss else 'N/A'}\n\n"
+                iteration_output = f"Iteration {i}:\nKL Divergence = {kl_div:.3f}\nLast epoch losses =\n{format_epoch_loss(last_epoch_loss) if last_epoch_loss else 'N/A'}\n\n"
                 sidebar_content += iteration_output
                 kl_sidebar.text(sidebar_content)
     
